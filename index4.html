@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất ngân hàng</title>
+
+</head>
+<body>
+        <script>
+            let money;
+            let year;
+            let interestrate;
+
+            money = +prompt('Nhập số tiền vốn - money');
+            year = +prompt('Nhập số năm - year');
+            interestrate = +prompt('Nhập tiền lãi - interestrate');
+
+            let total = money * year * (money * interestrate /100);
+            alert('Tổng tiền cả gốc lẫn lãi: ' +total);
+            document.write('Tổng tiền cả gốc lẫn lãi :' +total);
+
+        </script>
+</body>
+</html>
