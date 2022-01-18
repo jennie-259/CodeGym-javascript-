@@ -2,23 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tính lãi suất ngân hàng</title>
-
+    <title>Bài tập 2</title>
 </head>
 <body>
-        <script>
-            let money;
-            let year;
-            let interestrate;
-
-            money = +prompt('Nhập số tiền vốn - money');
-            year = +prompt('Nhập số năm - year');
-            interestrate = +prompt('Nhập tiền lãi - interestrate');
-
-            let total = money * year * (money * interestrate /100);
-            alert('Tổng tiền cả gốc lẫn lãi: ' +total);
-            document.write('Tổng tiền cả gốc lẫn lãi :' +total);
-
-        </script>
+<div id="MessageDiv"></div>
+<button type="button" onclick="showMessage();">Click me!</button>
+<script>
+    function showMessage (){
+        document.getElementById('MessageDiv').innerHTML = 'Xin chào!'
+    }
+</script>
 </body>
 </html>
